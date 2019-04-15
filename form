@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      <p>My Regista</p>
+        <label for="frist_name">Frist Name:</label>
+        <input type ="text" id="frist-name" value="Frist Name">
+        <br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email">
+        <br>
+        <label for="password">Password</label>
+        <input type="password">
+        <br>
+        <label for="Pw_confirm">PW Confirm:</label>
+        <input type="password">
+        <br>
+        <label for="brithday">Birthday:</label>
+        <input type="date" name="bday">
+        <br>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+        <br>
+        <label for="description">A short description about yourself</label>
+        <br>
+        <textarea name="" id="" rows="8" cols="40"></textarea>
+        <br>
+        Favorite Language 
+        <select>
+          <option value="js">Javascript</option>
+          <option value="css">Css</option>
+          <option value="c">C++</option>
+        </select>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+  </body>
+</html>
