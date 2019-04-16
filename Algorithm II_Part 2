@@ -1,0 +1,46 @@
+function printUpTo(x){
+  for (var i = 0; i < x+1; i++){
+    console.log(i);
+    
+  }
+  if(x < 0){
+    return false;
+  }// your code here
+}
+printUpTo(1000); // should print all the integers from 1 to 1000
+var y = printUpTo(-10); // should return false
+console.log(y); // should print false
+
+function printSum(x){
+  var sum = 0;
+  for (var i = 0; i < x+1; i++){
+    console.log(i);
+    sum = sum + i;
+  }//your code here
+  return sum
+}
+var y = printSum(255) // should print all the integers from 0 to 255 and with each integer print the sum so far.
+console.log(y) // should print 32640
+
+function printSumArray(x){
+  var sum = 0;
+  for(var i=0; i<x.length; i++) {
+    sum = sum + x[i];//your code here
+  }
+  return sum;
+}
+console.log(printSumArray([1,2,3])); // should log 6
+
+/*Create a function that returns the largest element in 
+a given array.  For example largestElement( [1,30,5,7] ) 
+should return 30.*/
+function getLargest(arr){
+  var maxNum = arr[0];
+  for (var i = 1; i < arr.length; i++){
+    if (maxNum < arr[i]){
+      maxNum = arr[i];
+    }
+  }
+  console.log(maxNum);
+}
+var x = getLargest([1,30,5,7]);
