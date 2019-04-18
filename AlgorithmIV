@@ -1,0 +1,54 @@
+1.15pm
+
+/*1.Given an array and a value Y, 
+count and print the number of 
+array values greater than Y.*/
+function greaterY(arr){
+  var newArr = [];
+  var count = 0;
+  for (var i = 0; i < arr.length; i++){
+    if (arr[i] > Y){
+      newArr.push(arr[i]);
+      count += 1;
+    }
+  }
+  console.log(newArr,count);
+}
+
+var Y = 7;
+var x = greaterY([2,4,7,10,9]);
+
+//2.Given an array, print the max, min and average values for that array.
+function get_value(arr){
+  var minNum = arr[0];
+  var maxNum = arr[0];
+  var sum = arr[0];
+  for (var i = 1; i < arr.length; i++){
+    if (arr[i] < minNum){
+      minNum = arr[i];
+    } 
+    if(arr[i] > maxNum){
+      maxNum = arr[i];
+    }
+    sum = sum + arr[i];
+    var avg = sum / arr.length;
+  }
+  console.log(minNum, maxNum, avg);
+}
+
+var x = get_value([12,32,2,10,6]);
+
+//3.Given an array of numbers, create a function that returns a new array where negative values were replaced with the string ‘Dojo’.   For example, replaceNegatives( [1,2,-3,-5,5]) should return [1,2, "Dojo", "Dojo", 5].
+
+function newArr(arr){
+  for (var i = 0; i< arr.length; i++){
+    if (arr[i] < 0){
+      arr[i] = "Dojo"
+    }
+  }
+  console.log(arr);
+}
+
+var y = newArr([1,2,-3,-5,5])
+
+//
